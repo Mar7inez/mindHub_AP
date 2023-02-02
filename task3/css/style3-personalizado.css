@@ -1,191 +1,365 @@
-    * {
-        padding: 0;
-        margin: 0;
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background-color: #7fdedf;
+}
+#body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.contenedor h1 {
+    color: rgb(17, 17, 16);
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px rgb(239, 239, 239);
+    width: 100%;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    margin: 30px;
+    position: absolute;
+}
+
+.contenedor img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    position: relative;
+    z-index: -1;
+}
+
+.contenedorLogo {
+    background-color: rgb(34, 31, 31);
+    width: 100%;
+}
+
+.article h3 {
+    padding-top: 50px;
+    width: 100%;
+    height: 120px;
+    font-size: 55px;
+    color: rgb(217, 216, 213);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    
+}
+
+.article img {
+    max-width: 250px;
+    max-height: 250px;
+    float: left;
+    position: absolute;
+    top: 900px;
+    left: 20px
+    
+}
+
+#homeArticle{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    left: 30%;
+    width: 80%;
+    height: 80%;
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+}
+
+.navEvents {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+    
+}
+
+.navEvents a{
+    text-decoration: none;
+    color: rgb(217, 216, 213);
+    margin: 2rem;
+    
+}
+
+
+#navBotonera{
+    display: flex;
+    justify-content: flex-end;
+    justify-content: space-evenly;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    width: 1200px;
+    height: 50px; 
+    position: relative;
+    left: 650px;
+    bottom: 250px;
+    padding: 1rem;   
+}
+#navBotonera p{
+
+    text-decoration: none;
+    border: solid 3px rgb(0, 0, 0);
+}
+#homeIndex{
+    background-color: rgb(72, 168, 3);
+    border-color: solid 4px rgb(0, 0, 0);
+}
+#aboutIndex{
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+#contactIndex{
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+#informationIndex{
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+#rulesIndex{
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    color: rgb(217, 216, 213);
+    background-color: rgb(34, 31, 31);
+    font-size: 30px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    position: relative;
+    top: 220px;
+    
+    
+}
+
+
+ /* ABOUT */
+
+
+.navEventsAbout {
+    max-width: 100%;
+    display: inline-block;
+    
+}
+
+.navEventsAbout a{
+    text-decoration: none;
+    color: rgb(217, 216, 213);
+    margin: 2rem;
+    
+}
+
+.navEventsAbout ul {
+    font-size: 40px;
+    width: 70%;
+    padding: 10px;
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    left: 80%;
+    
+}
+
+
+#homeAbout{
+    background-color: rgb(12, 78, 178);
+    border-color: solid 4px rgb(0, 0, 0);
+}
+#aboutAbout{
+    
+    background-color: rgb(72, 168, 3);
+    color: azure;
+}
+#contactAbout{
+    background-color: rgb(12, 78, 178);
+}
+.navEventsAbout ul {
+    font-size: 40px;
+    padding: 10px;
+    width: 70%;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    float: right;
+    list-style-type: none;
+    
+}
+
+.footerAbout{
+    width: 100%;
+    height: 50px;
+    color: rgb(217, 216, 213);
+    background-color: rgb(34, 31, 31);
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-top: auto;
+    bottom: 0;
+    
+}
+
+/* CONTACT */
+
+#contact{
+    width: 900px;
+    height: 400px;
+    
+    color: rgb(3, 3, 3);
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    left: 400px;
+    justify-content: center;
+    flex-direction: column;
+    bottom: 0;
+    position: relative;
+}
+
+.navEventsContact {
+    max-width: 100%;
+    display: inline-block;
+}
+.navEventsContact a{
+    text-decoration: none;
+    color: rgb(217, 216, 213);
+    margin: 2rem;
+    
+}
+
+
+.navEventsContact ul {
+    font-size: 40px;
+    width: 70%;
+    padding: 10px;
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+
+}
+#homeContact{
+    background-color: rgb(12, 78, 178);
+    border-color: solid 4px rgb(0, 0, 0);
+}
+#aboutContact{
+    
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+#contactContact{
+    background-color: rgb(72, 168, 3);
+}
+.navEventsContact ul {
+    font-size: 40px;
+    padding: 1rem;
+    width: 800px;
+    height: 500px;
+    left:300px;
+    top: 100px;
+    position: relative;
+    right: 1rem;
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+    list-style-type: none;
+    
+}
+#link{
+    color: blue;
+}
+
+/* -------------- GAME INFORMATION ------------------ */
+
+#tituloTabla{
+    position: relative;
+    background-color: rgb(17, 17, 16);
+    color: azure;
     }
-
-    body {
-        background-color: #7fdedf;
-    }
-
-    .contenedor h1 {
-        color: rgb(17, 17, 16);
-        font-size: 80px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 100;
-        text-transform: uppercase;
-        text-shadow: 2px 2px 1px rgb(239, 239, 239);
-        width: 100%;
-        top: 10%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 10px;
-        margin: 30px;
-        position: absolute;
-    }
-
-    .contenedor img {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        object-position: 50% 10%;
-    }
-
-    .contenedorLogo {
-        background-color: rgb(34, 31, 31);
-        width: 100%;
-    }
-
-    .article h3 {
-        padding-top: 50px;
-        width: 100%;
-        height: 120px;
-        font-size: 55px;
-        color: rgb(217, 216, 213);
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-    }
-
-    .article img {
-        max-width: 400px;
-        max-height: 400px;
-        float: right;
-        position: relative;
-        top: -100px;
-        margin-right: 80px;
-    }
-
-    .navEvents {
-        max-width: 100%;
-        
-        display: block;
-    }
-
-    .navEvents nav {
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        display: inline-block;
-        width: 400px;
-        vertical-align: top;
-        padding: 1rem;
-    }
-
-    .navEvents ul {
-        font-size: 40px;
-        padding: 30px;
-        display: inline-block;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        vertical-align: top;
-        list-style-type: none;
-    }
-
-    footer {
-        width: 100%;
-        height: 50px;
-        color: rgb(217, 216, 213);
-        background-color: rgb(34, 31, 31);
-        font-size: 30px;
-        text-align: center;
-        position: relative;
-        margin-top: auto;
-        bottom: 0;
-        border: solid 1px rgb(254, 3, 3);
-        
-    }
-
-
-     /* ABOUT */
-
-    .navEventsAbout {
-        max-width: 100%;
-        position: relative;
-        display: block;
-        border: solid 1px rgb(254, 3, 3);
-        
-    }
-
-    .navEventsAbout nav {
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        display: block;
-        width: 400px;
-        vertical-align: top;
-        padding: 1rem;
-        border: solid 1px rgb(254, 3, 3);
-    }
-
-    .navEventsAbout ul {
-        float: right;
-        font-size: 40px;
-        padding: 30px;
-        display: block;
-        position: relative;
-        list-style-type: none;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        vertical-align: top;
-        border: solid 1px rgb(254, 3, 3);
-    }
-
-    .footerAbout{
-        width: 100%;
-        height: 50px;
-        color: rgb(217, 216, 213);
-        background-color: rgb(34, 31, 31);
-        font-size: 30px;
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        margin-top: auto;
-        bottom: 0;
-        border: solid 1px rgb(254, 3, 3);
-    }
-
-    /* CONTACT */
-
-    .navEventsContact {
-        max-width: 100%;
-        position: relative;
-        display: inline-block;
-        border: solid 1px rgb(254, 3, 3);
-        
-    }
-
-    .navEventsContact nav {
-        font-size: 40px;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        display: block;
-        width: 400px;
-        vertical-align: top;
-        padding: 1rem;
-        border: solid 1px rgb(254, 3, 3);
-    }
-
-    .navEventsContact ul {
-        float: right;
-        font-size: 40px;
-        padding: 30px;
-        display: block;
-        list-style-type: none;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        vertical-align: top;
-        border: solid 1px rgb(254, 3, 3);
-    }
-
-    .footerContact{
-        width: 100%;
-        height: 50px;
-        color: rgb(217, 216, 213);
-        background-color: rgb(34, 31, 31);
-        font-size: 30px;
-        text-align: center;
-        position: relative;
-        display: inline-block;
-        margin-top: auto;
-        bottom: 0;
-        border: solid 1px rgb(254, 3, 3);
-    }
+#fall{
+    position: relative;
+    float: right;
+}   
+.tabla{
+    height: 1200px;
+    width: 1000px;
+    background-color: rgb(144, 142, 142);
+    color: rgb(217, 216, 213);
+    font-size: 28px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 350px;
+    top: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 10;
+    margin: 1rem;
+    
+    text-shadow: 1px 1px 1px rgb(239, 239, 239); 
+}
+#informationIndex{
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+#informationInformation{
+    background-color: rgb(72, 168, 3);
+    color: azure;
+}
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    padding: 10px 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+nav a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+nav a:hover::before {
+    bottom: 100%;
+    opacity: 1;
+}
+/* RULES */
+#rulesIndex{
+    background-color: rgb(12, 78, 178);
+    color: azure;
+}
+#rulesRules{
+    background-color: rgb(72, 168, 3);
+    color: azure;
+}
+.divRules{
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 20%;
+    height:100%;
+    width: 70%;
+    margin-bottom: 3rem;
+}
